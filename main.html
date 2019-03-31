@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover.css">
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
     <link rel="stylesheet" type="text/css" href="main.css"/>
+    <script src="main.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -20,10 +21,21 @@
     </div><br><br>
                
     <div class="search avenir b" id="search">
-        <input type="text" name="searchValue" size="40" placeholder="">
-        <div><a id="button" href="#" class="hvr-bob button">search</a></div>
+        <input id="searchinput" type="text" name="searchValue" size="40" placeholder="">
+
+        <button class="submit button hvr-bob b" id="submit" type="button">Search</button>
+        
     </div></center>
 
-<script src="main.js"></script>
+    <div class="inputerror avenir b i" id="inputerror"></div>
+    <div id="songplayer" class="songplayer">
+        <audio id="audio" controls src="">
+            Current browser does not support
+            <code>audio</code> element.
+        </audio>
+    </div>
+    <div id="songlist" class="songlist"></div>
+
+
 </body>
 </html>
